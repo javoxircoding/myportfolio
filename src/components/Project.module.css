@@ -1,11 +1,12 @@
-section{
+section {
     padding: 80px 100px;
 }
 
-.header{
+.header {
     text-align: center;
 }
-.header span{
+
+.header span {
     display: inline-block;
     padding: 8px 20px;
     background: rgba(255, 255, 255, 0.05);
@@ -18,7 +19,8 @@ section{
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }
-.header h2{
+
+.header h2 {
     font-size: 60px;
     font-weight: 900;
     background: linear-gradient(135deg, #ffffff 0%, #888888 100%);
@@ -26,4 +28,311 @@ section{
     -webkit-text-fill-color: transparent;
     margin: 0;
     letter-spacing: -2px;
+}
+
+.bentoGrid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 15px;
+    margin-top: 100px;
+}
+
+.gridCard {
+    position: relative;
+    padding: 20px;
+    height: 90%;
+}
+
+.someInfa {
+    border-radius: 10px;
+    left: 5px;
+    bottom: 40px;
+    width: 80%;
+    height: 50px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 0%;
+    background: rgba(113, 111, 111, 0.7);
+    padding: 0 20px;
+}
+
+.someInfa h3 {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: cyan;
+}
+
+.someInfa h3 span {
+    border: solid 1px gray;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: rgba(113, 111, 111, 0.7);
+}
+
+.hover {
+    width: 100%;
+    height: 100%;
+    background: rgba(113, 111, 111, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: absolute;
+    z-index: -999;
+    left: 0;
+    top: 0;
+}
+
+.gridCard:hover .hover {
+    z-index: 400;
+}
+
+.gridCard .hoverEfect {
+    background-color: rgba(17, 17, 17, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    margin-top: 3%;
+    margin-left: 1%;
+    text-align: center;
+    border-radius: 20px;
+    display: grid;
+    align-items: center;
+    place-items: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.4s ease-in-out;
+    z-index: 500;
+}
+
+.hoverEfect h1 {
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-bottom: -20px;
+    color: whitesmoke;
+}
+
+.hoverEfect h3 {
+    font-size: 14px;
+    color: #c2bfbf;
+}
+
+.hoverEfect button {
+    width: 100px;
+    margin-top: -10px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px rgb(174, 171, 171) solid;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.hoverEfect button a {
+    color: whitesmoke;
+    font-size: 12px;
+    font-family: sans-serif;
+    letter-spacing: .5px;
+    text-decoration: none;
+}
+
+.gridCard:hover .hoverEfect {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card1 .hoverEfect,
+.card4 .hoverEfect,
+.card5 .hoverEfect {
+    margin-top: 8%;
+    margin-left: 5%;
+}
+
+.card1 .hoverEfect h1,
+.card4 .hoverEfect h1,
+.card5 .hoverEfect h1 {
+    margin-top: 30px;
+}
+
+.card1 .hoverEfect button,
+.card4 .hoverEfect button,
+.card5 .hoverEfect button {
+    margin-bottom: 30px;
+}
+
+.card1 .someInfa,
+.card4 .someInfa,
+.card5 .someInfa {
+    margin-left: 5%;
+    bottom: 20px;
+}
+
+
+.card1 {
+    grid-column: span 4 / span 4;
+    grid-row: span 4 / span 4;
+    overflow: hidden;
+    border-radius: 5px;
+    background-image: url(https://avatars.mds.yandex.net/i?id=80d5991240ed55e25aa5521a0a0807e8e165c5f4-10391931-images-thumbs&ref=rim&n=33&w=453&h=300);
+    background-size: cover;
+    height: 350px;
+}
+
+
+
+.card2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 5;
+    overflow: hidden;
+    border-radius: 5px;
+    background-image: url(https://avatars.mds.yandex.net/i?id=80d5991240ed55e25aa5521a0a0807e8e165c5f4-10391931-images-thumbs&ref=rim&n=33&w=453&h=300);
+    background-size: cover;
+}
+
+
+.card3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 7;
+    overflow: hidden;
+    border-radius: 5px;
+    background-image: url(https://avatars.mds.yandex.net/i?id=80d5991240ed55e25aa5521a0a0807e8e165c5f4-10391931-images-thumbs&ref=rim&n=33&w=453&h=300);
+    background-size: cover;
+}
+
+
+.card4 {
+    grid-column: span 4 / span 4;
+    grid-row: span 4 / span 4;
+    grid-column-start: 5;
+    grid-row-start: 3;
+    overflow: hidden;
+    border-radius: 5px;
+    background-image: url(https://avatars.mds.yandex.net/i?id=80d5991240ed55e25aa5521a0a0807e8e165c5f4-10391931-images-thumbs&ref=rim&n=33&w=453&h=300);
+    background-size: cover;
+}
+
+
+.card5 {
+    grid-column: span 4 / span 4;
+    grid-row: span 4 / span 4;
+    grid-row-start: 5;
+    overflow: hidden;
+    border-radius: 5px;
+    background-image: url(https://avatars.mds.yandex.net/i?id=80d5991240ed55e25aa5521a0a0807e8e165c5f4-10391931-images-thumbs&ref=rim&n=33&w=453&h=300);
+    background-size: cover;
+}
+
+
+.card6 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 5;
+    grid-row-start: 7;
+    overflow: hidden;
+    border-radius: 5px;
+    background-image: url(https://avatars.mds.yandex.net/i?id=80d5991240ed55e25aa5521a0a0807e8e165c5f4-10391931-images-thumbs&ref=rim&n=33&w=453&h=300);
+    background-size: cover;
+}
+
+
+
+.card7 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 7;
+    grid-row-start: 7;
+    overflow: hidden;
+    border-radius: 5px;
+    background-image: url(https://avatars.mds.yandex.net/i?id=80d5991240ed55e25aa5521a0a0807e8e165c5f4-10391931-images-thumbs&ref=rim&n=33&w=453&h=300);
+    background-size: cover;
+}
+
+@media (max-width: 1200px) {
+    .bentoGrid {
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    .card1 {
+        grid-column: span 4 / span 4;
+        grid-row: span 3 / span 3;
+        height: 350px;
+    }
+    .card1 .hoverEfect{
+        top: 8%;
+    }
+
+
+
+    .card2 {
+        grid-column: span 2 / span 4;
+        grid-row: span 2 / span 2;
+        grid-column-start: 5;
+    }
+    .card2 .hoverEfect,
+    .card3 .hoverEfect{
+        left: 9%;
+        top: 10%;
+    }
+
+
+    .card3 {
+        grid-column: span 2 / span 4;
+        grid-row: span 2 / span 2;
+        grid-column-start: 5;
+        grid-row-start: 3;
+    }
+
+
+    .card4 {
+        grid-column: span 4 / span 4;
+        grid-row: span 4 / span 3;
+        grid-column-start: 5;
+        grid-row-start: 5;
+    }
+
+
+    .card5 {
+        grid-column: span 4 / span 4;
+        grid-row: span 4 / span 2;
+        grid-row-start: 4;
+
+    }
+    .card5 .hoverEfect{
+        top: 0;
+    }
+
+
+    .card6 {
+        grid-column: span 2 / span 4;
+        grid-row: span 2 / span 2;
+        grid-column-start: 1;
+        grid-row-start: 6;
+    }
+    .card6 .hoverEfect{
+        left: 9%;
+        top: 10%;
+    }
+    .card7 {
+        grid-column: span 2 / span 8;
+        grid-row: span 2 / span 8;
+        grid-column-start: 1;
+        grid-row-start: 8;
+    }
+    .card7 .hoverEfect{
+        top: 1%;
+        left: 10%;
+    }
+}
+@media (max-width: 900px){
+    section{
+        padding: 80px 50px;
+    }
+}
+@media (max-width: 750px){
+    
 }
