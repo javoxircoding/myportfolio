@@ -27,22 +27,22 @@ const Home = () => {
       <div className={styles.scene}>
         <div className={styles.cube}>
           <div className={`${styles.cubeFace} ${styles.front}`}>
-             <img style={{width: '300px'}} src="javascript-39395.png" alt="" />
+             <img style={{width: '250px'}} src="javascript-39395.png" alt="" />
           </div>
           <div className={`${styles.cubeFace} ${styles.back}`}>
-            <img style={{width: '200px'}} src="ux.png" alt="" />
+            <img style={{width: '170px'}} src="ux.png" alt="" />
           </div>
           <div className={`${styles.cubeFace} ${styles.right}`}>
-            <img style={{width: '150px'}} src="React-icon.svg.png" alt="" />
+            <img style={{width: '120px'}} src="React-icon.svg.png" alt="" />
           </div>
           <div className={`${styles.cubeFace} ${styles.left}`}>
-            <img style={{width: '150px'}} src="html5-logo-31821.png" alt="" />
+            <img style={{width: '120px'}} src="html5-logo-31821.png" alt="" />
           </div>
           <div className={`${styles.cubeFace} ${styles.top}`}>
-            <img style={{width: '150px'}} src="html5-logo-31813.png" alt="" />
+            <img style={{width: '120px'}} src="html5-logo-31813.png" alt="" />
           </div>
           <div className={`${styles.cubeFace} ${styles.bottom}`}>
-            <img style={{width: '150px'}} src="github-dark.png" alt="" />
+            <img style={{width: '120px'}} src="github-dark.png" alt="" />
           </div>
         </div>
       </div>

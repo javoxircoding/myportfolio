@@ -5,11 +5,13 @@
     align-items: center;
     color: white;
     background: rgba(17,17,17, .9);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(8px);
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
     border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+
 }
 .navLinks{
     display: flex;
@@ -20,8 +22,107 @@
     font-size: 18px;
     /* font-size: 18px; */
     font-family: sans-serif;
+    align-items: center;
+}
+.navLinks  li:last-child{
+    border: solid 1px transparent;
+    background-image: linear-gradient(#111, #111), 
+                      linear-gradient(135deg, #818cf8, #a78bfa);
+    border-image-slice: 2;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-origin: border-box;
+    color: #a78bfa;
+    background-clip: padding-box, border-box;
+    margin-left: 50px;
+}
+.navLinks li:last-child:hover {
+    transform: translateY(-3px);
+    color: #818cf8;
+    box-shadow: 0 1px 5px white;
 }
 .navLinks li:hover{
     color: rgb(117, 117, 117);
     transition: .5s;
+}
+label{
+    display: none;
+}
+input[type="checkbox"]{
+    display: none;
+}
+@media (max-width: 1050px){
+    .navbar{
+        padding: 0px 30px;
+    }
+    .navLinks{
+        gap: 15px;
+        font-size: 18px;
+    }
+    .navLinks li:last-child{
+        margin-left: 10px;
+    }
+}
+@media (max-width: 768px){
+    .navLinks{
+        position: fixed;
+        background: grey;
+        left: 0;
+        top: 60px;
+        transform: translateX(-150%);
+        padding: 20px 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-content: center;
+        place-items: center;
+        width: 100%;
+        transition: all 0.5s ease;
+        z-index: 999;
+    }
+    .navLinks li{
+        border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+        padding-bottom: 10px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.8);
+        width: 100%;
+        padding-top: 10px;
+
+    }
+    .navLinks  li:last-child{
+        margin: 0;
+        width: 100px;
+        text-align: center;
+    }
+    .navbar label {
+        display: block;
+        cursor: pointer;
+        font-size: 34px;
+        z-index: 1001;
+    }
+    .navbar input:checked ~ .navLinks{
+        position: fixed;
+        background: rgb(37, 37, 37);
+        left: 0;
+        transform: translateY(0%);
+        top: 60px;
+        padding: 20px 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-content: center;
+        place-items: center;
+        width: 100%;
+        transition: all 0.5s ease;
+        z-index: 999;
+    }
+    .navbar label i:nth-child(2){
+        display: none;
+    }
+    .navbar input:checked ~ label i:nth-child(1){
+        display: none;
+    }
+    .navbar input:checked ~ label i:nth-child(2){
+        display: block;
+    }
 }

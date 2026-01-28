@@ -6,9 +6,16 @@ function Navbar() {
       <div className={styles.logo}>
         <h1>Javoxir</h1>
       </div>
+    
+          <input type="checkbox" name="burger" id="burger" />
+          <label htmlFor="burger">
+              <i className={styles.enterBtn} class='bx bx-menu'></i>
+              <i className={styles.closeBtn} class='bx bx-x' ></i>
+          </label>
+        
       <ul className={styles.navLinks}>
         <li>
-          <a href="#home"></a>
+          <a href="#home"></a>Home
         </li>
         <li>
           <a href="about"></a>About
