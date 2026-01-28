@@ -15,8 +15,7 @@ const Projects = () => {
           {/* grid cartalari */}
 
           <div className={styles.gridCard}>
-            <div className={styles.hover}></div>
-
+            
             <div className={styles.someInfa}>
               
               <h3 className={styles.tarkib}>
@@ -39,7 +38,7 @@ const Projects = () => {
           {/* grid cartalari */}
 
           <div className={styles.gridCard}>
-            <div className={styles.hover}></div>
+
             <div className={styles.someInfa}>
               
               <h3 className={styles.tarkib}>
@@ -61,7 +60,7 @@ const Projects = () => {
           {/* grid cartalari */}
 
           <div className={styles.gridCard}>
-            <div className={styles.hover}></div>
+
             <div className={styles.someInfa}>
               
               <h3 className={styles.tarkib}>
@@ -83,7 +82,7 @@ const Projects = () => {
           {/* grid cartalari */}
 
           <div className={styles.gridCard}>
-            <div className={styles.hover}></div>
+
             <div className={styles.someInfa}>
               
               <h3 className={styles.tarkib}>
@@ -105,7 +104,7 @@ const Projects = () => {
           {/* grid cartalari */}
 
           <div className={styles.gridCard}>
-            <div className={styles.hover}></div>
+
             <div className={styles.someInfa}>
               
               <h3 className={styles.tarkib}>
@@ -127,7 +126,7 @@ const Projects = () => {
           {/* grid cartalari */}
 
           <div className={styles.gridCard}>
-            <div className={styles.hover}></div>
+
             <div className={styles.someInfa}>
               
               <h3 className={styles.tarkib}>
@@ -149,7 +148,7 @@ const Projects = () => {
           {/* grid cartalari */}
 
           <div className={styles.gridCard}>
-            <div className={styles.hover}></div>
+
             <div className={styles.someInfa}>
               
               <h3 className={styles.tarkib}>
