@@ -8,6 +8,7 @@ const Projects = () => {
       <div className={styles.header}>
         <span>Loyhalar</span>
         <h2>Men yaratgan loyhalar</h2>
+        <div className={styles.titleUnderline}></div>
       </div>
 
       <div className={styles.bentoGrid}>

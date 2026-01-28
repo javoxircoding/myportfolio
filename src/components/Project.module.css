@@ -29,7 +29,13 @@ section {
     margin: 0;
     letter-spacing: -2px;
 }
-
+.titleUnderline{
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #6366f1 0%, #8b5cf6 100%);
+    margin: 20px auto 0;
+    border-radius: 2px;
+}
 .bentoGrid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -328,5 +334,65 @@ section {
     }
 }
 @media (max-width: 750px){
-    
+    .bentoGrid{
+        grid-template-columns: 1fr;
+        padding: 0px 10%;
+    }
+    :is(.card1, .card2, .card3, .card4, .card5, .card6, .card7){
+        height: 300px;
+    }
+    :is(.card1, .card2, .card3, .card4, .card5, .card6, .card7) .someInfa{
+        left: 6%;
+        margin: 0;
+    }
+    :is(.card1, .card2, .card3, .card4, .card5, .card6, .card7) .hoverEfect{
+        margin: 0;
+        top: 18%;
+        left: 10%;
+    }
+    .card1 {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .card2 {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .card3 {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .card4 {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .card5 {
+        grid-column: auto;
+        grid-row: auto;
+
+    }
+    .card6 {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .card7 {
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
+@media (max-width: 500px){
+    .bentoGrid{
+        padding: 0 0;
+    }
+    .header h2{
+        font-size: 40px;
+    }
+}
+@media (max-width: 450px){
+    section{
+        padding: 80px 20px;
+    }
+    .someInfa{
+        left: -5%;
+    }
 }
