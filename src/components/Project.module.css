@@ -145,28 +145,20 @@ section {
     transform: translateY(0);
 }
 
-.card1 .hoverEfect,
-.card4 .hoverEfect,
-.card5 .hoverEfect {
+:is(.card1, .card4, .card5) .hoverEfect{
     margin-top: 8%;
     margin-left: 5%;
 }
 
-.card1 .hoverEfect h1,
-.card4 .hoverEfect h1,
-.card5 .hoverEfect h1 {
+:is(.card1, .card4, .card5) .hoverEfect h1{
     margin-top: 30px;
 }
 
-.card1 .hoverEfect button,
-.card4 .hoverEfect button,
-.card5 .hoverEfect button {
+:is(.card1, .card4, .card5) .hoverEfect button{
     margin-bottom: 30px;
 }
 
-.card1 .someInfa,
-.card4 .someInfa,
-.card5 .someInfa {
+:is(.card1, .card4, .card5) .someInfa{
     margin-left: 5%;
     bottom: 20px;
 }
