@@ -337,6 +337,7 @@ section {
     .bentoGrid{
         grid-template-columns: 1fr;
         padding: 0px 10%;
+        grid-template-rows: repeat(6, 1fr);
     }
     :is(.card1, .card2, .card3, .card4, .card5, .card6, .card7){
         height: 300px;

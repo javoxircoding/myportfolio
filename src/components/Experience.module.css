@@ -1,0 +1,123 @@
+.header {
+  text-align: center;
+}
+.badge {
+  display: inline-block;
+  padding: 8px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.title {
+  font-size: 60px;
+  font-weight: 900;
+  background: linear-gradient(135deg, #ffffff 0%, #888888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  letter-spacing: -2px;
+}
+.titleUnderline {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #6366f1 0%, #8b5cf6 100%);
+  margin: 20px auto 0;
+  border-radius: 2px;
+}
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 20px;
+}
+
+/* Markazdagi nurli chiziq */
+.centerLine {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, transparent, #fff, transparent);
+    transform: translateX(-50%);
+    box-shadow: 0 0 15px #fff; /* Chiziqdan nur taralishi */
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+    width: 100%;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+/* Chap va o'ng qismlarni bir xil o'lchamda qilish */
+.imageBox, .infoBox {
+    width: 45%;
+    height: 250px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: 0.4s ease;
+}
+
+/* O'rtadagi nurli nuqta */
+.dot {
+    position: absolute;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 20px #fff, 0 0 40px #fff; /* Kuchli yorug'lik */
+    z-index: 2;
+}
+
+/* JUFT ELEMENTLARNI TESKARI QILISH (Reverse) */
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.imageBox img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.infoBox h2 {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.infoBox span {
+    color: #aaa;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.infoBox p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Hover bo'lganda karta biroz ko'tarilishi va yorishishi */
+:is(.infoBox, .imageBox):hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.3);
+}
