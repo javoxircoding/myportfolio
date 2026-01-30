@@ -4,10 +4,10 @@
 .badge {
   display: inline-block;
   padding: 8px 20px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--card-hover-bg);
+  border: 1px solid var(--border);
   border-radius: 30px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text-color-1);
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 20px;
@@ -17,7 +17,7 @@
 .title {
   font-size: 60px;
   font-weight: 900;
-  background: linear-gradient(135deg, #ffffff 0%, #888888 100%);
+  background: var(--gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
@@ -26,7 +26,7 @@
 .titleUnderline {
   width: 80px;
   height: 4px;
-  background: linear-gradient(90deg, #6366f1 0%, #8b5cf6 100%);
+  background: var(--line-grd);
   margin: 20px auto 0;
   border-radius: 2px;
 }
@@ -46,7 +46,7 @@
     width: 2px;
     background: linear-gradient(to bottom, transparent, #fff, transparent);
     transform: translateX(-50%);
-    box-shadow: 0 0 15px #fff; /* Chiziqdan nur taralishi */
+    box-shadow: 0 0 15px #fff;
 }
 
 .item {
@@ -59,20 +59,18 @@
     position: relative;
 }
 
-/* Chap va o'ng qismlarni bir xil o'lchamda qilish */
 .imageBox, .infoBox {
     width: 45%;
     height: 250px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--card-hover-bg);
     border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     transition: 0.4s ease;
 }
 
-/* O'rtadagi nurli nuqta */
 .dot {
     position: absolute;
     left: 50%;
@@ -81,11 +79,10 @@
     background: #fff;
     border-radius: 50%;
     transform: translateX(-50%);
-    box-shadow: 0 0 20px #fff, 0 0 40px #fff; /* Kuchli yorug'lik */
+    box-shadow: 0 0 20px #fff, 0 0 40px #fff;
     z-index: 2;
 }
 
-/* JUFT ELEMENTLARNI TESKARI QILISH (Reverse) */
 .reverse {
     flex-direction: row-reverse;
 }
@@ -99,25 +96,67 @@
 
 .infoBox h2 {
     color: #fff;
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 .infoBox span {
     color: #aaa;
-    font-size: 14px;
+    font-size: 16px;
     display: block;
     margin-bottom: 15px;
 }
 
 .infoBox p {
     color: #ccc;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
-/* Hover bo'lganda karta biroz ko'tarilishi va yorishishi */
 :is(.infoBox, .imageBox):hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--border);
     transform: translateY(-5px);
-    border-color: rgba(255, 255, 255, 0.3);
+    border-color: var(--border-hover);
+}
+@media (max-width: 800px){
+    :is(.imageBox, .infoBox){
+        height: 150px;
+    }
+    .infoBox h2{
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-top: -5px;
+    }
+    .infoBox span{
+        font-size: 14px;
+        margin-bottom: -10px;
+    }
+    .infoBox p{
+        line-height: normal;
+    }
+}
+@media (max-width: 650px){
+    .header h2{
+        font-size: 40px;
+    }
+    .item{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 0;
+    }
+    :is(.imageBox, .infoBox){
+        width: 270px;
+        margin: 20px 0;
+    }
+    .infoBox{
+        display: grid;
+        align-items: center;
+    }
+}
+@media (max-width: 400px){
+    :is(.imageBox, .infoBox){
+        width: 200px;
+    }
 }

@@ -6,7 +6,7 @@
     --card-bg: rgba(255, 255, 255, 0.03);
     --card-hover-bg: rgba(255, 255, 255, 0.05);
     --border: rgba(255, 255, 255, 0.1);
-    --border-hover: rgba(255, 255, 255, 0.2);
+    --border-hover: rgba(255, 255, 255, 0.3);
     --gradient: linear-gradient(135deg, #ffffff 0%, #888888 100%);
     --line-grd: linear-gradient(90deg, #6366f1 0%, #8b5cf6 100%);
 
