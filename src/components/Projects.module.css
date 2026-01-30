@@ -9,10 +9,10 @@ section {
 .header span {
     display: inline-block;
     padding: 8px 20px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--card-hover-bg);
+    border: 1px solid var(--border);
     border-radius: 30px;
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--text-color-1);
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 20px;
@@ -23,7 +23,7 @@ section {
 .header h2 {
     font-size: 60px;
     font-weight: 900;
-    background: linear-gradient(135deg, #ffffff 0%, #888888 100%);
+    background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0;
@@ -32,7 +32,7 @@ section {
 .titleUnderline{
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, #6366f1 0%, #8b5cf6 100%);
+    background: var(--line-grd);
     margin: 20px auto 0;
     border-radius: 2px;
 }
@@ -121,12 +121,12 @@ section {
     font-size: 20px;
     font-family: sans-serif;
     margin-bottom: -20px;
-    color: whitesmoke;
+    color: var(--text-color-3);
 }
 
 .hoverEfect h3 {
     font-size: 14px;
-    color: #c2bfbf;
+    color: var(--text-color-2);
 }
 
 .hoverEfect button {
@@ -135,11 +135,11 @@ section {
     height: 30px;
     border-radius: 20px;
     border: 1px rgb(174, 171, 171) solid;
-    background: rgba(255, 255, 255, 0.3);
+    background: var(--card-bg);
 }
 
 .hoverEfect button a {
-    color: whitesmoke;
+    color: var(--text-color-3);
     font-size: 12px;
     font-family: sans-serif;
     letter-spacing: .5px;

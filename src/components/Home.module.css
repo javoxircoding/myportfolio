@@ -13,14 +13,14 @@
     font-family: sans-serif;
     position: relative;
     height: 79vh;  
-    /* border: solid white; */
+    /* border: solid var(--text-color-3); */
 }
 .section::before {
   content: "";
   position: absolute;
   width: 1000px;
   height: 1000px;
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--card-bg);
   border-radius: 50%;
   top: -250px;
   right: -100px;
@@ -48,7 +48,7 @@
 .section h3{
     font-size: 1.3rem;
     font-weight: 700;
-    color: white;
+    color: var(--text-color-3);
     margin-top: -15px;
     padding: 20px 0;
 }
@@ -57,7 +57,7 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
-    color: white;
+    color: var(--text-color-3);
 }
 .skill h2{
     margin: 20px 0px;
@@ -99,46 +99,44 @@
   position: absolute;
   width: 250px;
   height: 250px;
-  border: 2px solid rgb(48, 47, 47);
+  border: 2px solid var(--border);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 80px;
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.9);
-  text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
 
 }
 
 .front {
-  background: rgba(225, 225, 225, 0.3);
+  background: var(--card-hover-bg);
   transform: rotateY(0deg) translateZ(125px);
 }
 
 .back {
-  background: rgba(225, 225, 225, 0.3);
+  background: var(--card-hover-bg);
   transform: rotateY(180deg) translateZ(125px);
 }
 
 .right {
-  background: rgba(225, 225, 225, 0.3);
+  background: var(--card-hover-bg);
   transform: rotateY(90deg) translateZ(125px);
 }
 
 .left {
-  background: rgba(225, 225, 225, 0.3);
+  background: var(--card-hover-bg);
   transform: rotateY(-90deg) translateZ(125px);
 }
 
 .top {
-  background: rgba(225, 225, 225, 0.3);
+  background: var(--card-hover-bg);
   transform: rotateX(90deg) translateZ(125px);
 }
 
 .bottom {
-  background: rgba(225, 225, 225, 0.3);
+  background: var(--card-hover-bg);
   transform: rotateX(-90deg) translateZ(125px);
 }
 @media (max-width: 1050px){
@@ -148,7 +146,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
-    background: rgba(255, 255, 255, 0.04);
+    background: var(--card-bg);
 
   }
   .section::before{
