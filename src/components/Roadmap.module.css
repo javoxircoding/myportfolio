@@ -1,0 +1,81 @@
+.header{
+    text-align: center;
+    margin-bottom: 80px;
+
+}
+.badge{
+    display: inline-block;
+    padding: 8px 20px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    color: var(--text-color-1);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+.title{
+    font-size: 60px;
+    font-weight: 900;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    letter-spacing: -2px;
+}
+.titleUnderline{
+    width: 80px;
+    height: 4px;
+    background: var(--line-grd);
+    margin: 20px auto 0;
+    border-radius: 2px;
+}
+.roadmapWrapper {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto; /* Agar ekran kichik bo'lsa, yon tomonga suriladi */
+    padding: 40px 20px;
+    scroll-behavior: smooth;
+}
+
+.card {
+    min-width: 300px;
+    background: var(--matn-oq, #ffffff);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.quarterBadge {
+    background: #7c4dff; /* Binafsha rang */
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.goalItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    color: #555;
+    font-size: 15px;
+}
+
+.checkbox {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ddd;
+    border-radius: 50%; /* Dumaloq checkbox */
+    display: inline-block;
+}

@@ -29,8 +29,8 @@ const Experience = () => {
 
     <section>
       <div className={styles.header}>
-        <span className={styles.badge}>Men haqimda</span>
-        <h2 className={styles.title}>Tanishib Chiqing</h2>
+        <span className={styles.badge}>Experiance</span>
+        <h2 className={styles.title}>Men bosib o'tgan yol</h2>
         <div className={styles.titleUnderline}></div>
       </div>
 
