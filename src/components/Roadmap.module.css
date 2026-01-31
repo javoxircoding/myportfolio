@@ -32,21 +32,25 @@
     margin: 20px auto 0;
     border-radius: 2px;
 }
+.roadmapSection{
+    padding: 50px 17%;
+}
 .roadmapWrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* justify-content: center; */
+    place-items: center;
     gap: 25px;
-    overflow-x: auto; /* Agar ekran kichik bo'lsa, yon tomonga suriladi */
-    padding: 40px 20px;
-    scroll-behavior: smooth;
 }
 
 .card {
-    min-width: 300px;
-    background: var(--matn-oq, #ffffff);
+    width: 350px;
+    height: 200px;
+    background: var(--border);
     border-radius: 20px;
-    padding: 25px;
+    padding: 30px 25px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    border: 1px solid #eee;
+    border: 1px solid var(--border-hover);
     transition: transform 0.3s ease;
 }
 
@@ -56,7 +60,7 @@
 
 .quarterBadge {
     background: #7c4dff; /* Binafsha rang */
-    color: white;
+    color: var(--text-color-3);
     padding: 5px 15px;
     border-radius: 20px;
     font-size: 14px;

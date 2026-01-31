@@ -48,11 +48,9 @@ const Roadmap = () =>{
 
         <div className={styles.header}>
             <span className={styles.badge}>Roadmap</span>
-            <h2 className={styles.title}>Kelguvsida rejalarim</h2>
+            <h2 className={styles.title}>Mening Rejalarim (2026)</h2>
             <div className={styles.titleUnderline}></div>
         </div>
-
-      <h2 className={styles.mainTitle}>Mening Rejalarim (2026)</h2>
       
       <div className={styles.roadmapWrapper}>
         {roadmap.map((item) => (
