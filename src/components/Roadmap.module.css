@@ -33,12 +33,13 @@
     border-radius: 2px;
 }
 .roadmapSection{
-    padding: 50px 17%;
+    padding: 50px 20vw;
+    
 }
 .roadmapWrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* justify-content: center; */
+    justify-content: center;
     place-items: center;
     gap: 25px;
 }
@@ -70,16 +71,32 @@
 .goalItem {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 25px;
     margin-bottom: 12px;
-    color: #555;
+    margin-left: -35px;
+    color: var(--text-color-1);
     font-size: 15px;
 }
 
 .checkbox {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     border: 2px solid #ddd;
-    border-radius: 50%; /* Dumaloq checkbox */
+    border-radius: 50%;
     display: inline-block;
+}
+@media (max-width: 950px){
+    .roadmapWrapper{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 650px){
+    .title{
+        font-size: 35px;
+    }
+}
+@media (max-width: 500px){
+    .card{
+        width: 250px;
+    }
 }

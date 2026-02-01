@@ -7,9 +7,9 @@ const Roadmap = () =>{
             quarter: "2026 Q1",
             level: "Frontend Junior+",
             goals: [
-                "HTML/CSS/JS/React Mukammalashtirish",
+                "HTML/CSS/JS/React",
                 "Daromadga chiqish(Frelans/Ish)",
-                "Backend (Node.js/Express) o'rganishni boshlash"
+                "Backend (Nest.js) boshlash"
             ]
         },
         {
@@ -45,6 +45,7 @@ const Roadmap = () =>{
     ];
     return (
     <section className={styles.roadmapSection}>
+
 
         <div className={styles.header}>
             <span className={styles.badge}>Roadmap</span>
