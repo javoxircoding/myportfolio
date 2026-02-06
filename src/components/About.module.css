@@ -1,9 +1,7 @@
 .aboutSection{
-    min-height: 100vh;
+    height: auto;
     padding: 100px 90px;
-    background: #0a0a0a;
     position: relative;
-    /* overflow: hidden; */
 }
 
 .container{
@@ -72,7 +70,7 @@
     background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899);
     border-radius: 30px;
     opacity: 0.5;
-    filter: blur(150px);
+    filter: blur(250px);
     animation: pulse 3s  ease-in-out infinite
 }
 
@@ -533,6 +531,7 @@
 @media (max-width: 1090px) {
   .aboutSection {
     padding: 80px 40px;
+    overflow: hidden;
   }
 
   .contentGrid {
@@ -589,6 +588,20 @@
   }
   .tabBtn{
     padding: 12px 15px;
+    font-size: 14px;
+  }
+  .floatingCard{
+    width: 80px;
+    height: 40px;
+    bottom: 2vw;
+    right: 2vh;
+    padding: 15px;
+  }
+  .floatingCard img{
+    width: 30px;
+    height: auto;
+  }
+  .floatingCard h4{
     font-size: 14px;
   }
 }
