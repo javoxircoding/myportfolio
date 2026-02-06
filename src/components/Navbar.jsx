@@ -1,4 +1,5 @@
 import styles from "./Navbar.module.css";
+import { Link } from 'react-scroll';
 
 function Navbar() {
   return (
@@ -12,28 +13,76 @@ function Navbar() {
               <i className={styles.enterBtn} class='bx bx-menu'></i>
               <i className={styles.closeBtn} class='bx bx-x' ></i>
           </label>
-        
+
       <ul className={styles.navLinks}>
+        <Link 
+            to="Home"
+            smooth={true}  
+            duration={50} 
+            offset={-80}  
+            activeClass="active"
+            spy={true}       
+          >
+            Bosh sahifa
+          </Link>
         <li>
-          <a href="#home"></a>Home
+          <Link
+          to="about"
+          smooth={true}
+          duration={50}
+          spy={true}>
+            Men haqimda
+          </Link>
         </li>
         <li>
-          <a href="about"></a>About
+          <Link
+          to="skill"
+          smooth={true}
+          duration={50}
+          offset={-10}
+          spy={true}>
+            Ko'nikmalar
+          </Link>
         </li>
         <li>
-          <a href="skills"></a>Skills
+          <Link
+          to="project"
+          smooth={true}
+          duration={50}
+          offset={-10}
+          spy={true}>
+            Loyihalar
+          </Link>
         </li>
         <li>
-          <a href="projects"></a>Projects
+          <Link
+          to="tajriba"
+          smooth={true}
+          duration={50}
+          offset={-10}
+          spy={true}>
+            Tajriba
+          </Link>
         </li>
         <li>
-          <a href="experians"></a>Experience
+          <Link
+          to="roadmap"
+          smooth={true}
+          duration={50}
+          offset={-40}
+          spy={true}>
+            Yo'l xaritasi
+          </Link>
         </li>
         <li>
-          <a href="Roadmap"></a>Roadmap
-        </li>
-        <li>
-          <a href="contact"></a>Contact
+          <Link
+          to="contact"
+          smooth={true}
+          duration={50}
+          offset={-10}
+          spy={true}>
+            Bog'lanish
+          </Link>
         </li>
       </ul>
     </nav>

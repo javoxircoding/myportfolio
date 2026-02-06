@@ -44,7 +44,7 @@ const Roadmap = () =>{
         }
     ];
     return (
-    <section className={styles.roadmapSection}>
+    <section id="roadmap" className={styles.roadmapSection}>
 
 
         <div className={styles.header}>

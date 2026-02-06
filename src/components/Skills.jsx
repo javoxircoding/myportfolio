@@ -2,7 +2,7 @@ import styles from './Skills.module.css'
 
 const Skills = () => {
     return(
-        <section>
+        <section id='skill'>
 
         {/* skill qismining headeri */}
 

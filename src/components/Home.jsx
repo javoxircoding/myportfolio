@@ -2,10 +2,10 @@ import styles from  "./Home.module.css"
 
 const Home = () => {
   return (
-    <section className={styles.sec}>
+    <section id="Home" className={styles.sec}>
       <div className={styles.section}>
-        <h1>Frontend Web Developer</h1>
-      <h3>Hi, I'm Javoxir. I build engaging & scalable web applications.</h3>
+        <h1>Assalomu alaykum! <br /> Men Javoxir — Frontend dasturchiman.</h1>
+      <h3>Men biznesingiz uchun zamonaviy, tezkor va foydalanuvchilarga qulay veb-saytlar yarataman.</h3>
       <div className={styles.skill}>
 
         <h2 style={{display: 'flex', alignItems: 'center'}}>

@@ -27,7 +27,7 @@ const Experience = () => {
 
   return (
 
-    <section>
+    <section id="tajriba">
       <div className={styles.header}>
         <span className={styles.badge}>Experiance</span>
         <h2 className={styles.title}>Men bosib o'tgan yol</h2>

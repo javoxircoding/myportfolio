@@ -2,7 +2,7 @@ import styles from "./Projects.module.css";
 
 const Projects = () => {
   return (
-    <section>
+    <section id="project">
       {/* bosh qismi */}
 
       <div className={styles.header}>
