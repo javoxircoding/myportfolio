@@ -1,6 +1,6 @@
 .aboutSection{
     height: auto;
-    padding: 100px 90px;
+    padding: 100px 100px;
     position: relative;
 }
 
@@ -9,7 +9,6 @@
     margin: 0 auto;
     position: relative;
     z-index: 2;
-
 }
 .header{
     text-align: center;

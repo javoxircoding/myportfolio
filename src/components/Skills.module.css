@@ -1,4 +1,4 @@
-section{
+.skillSection{
     color: var(--text-color-3);
     padding: 90px 100px;
 }
@@ -198,10 +198,17 @@ section{
     }
 }
 @media (max-width: 700px){
-    section{
+    .skillSection{
         padding: 90px 20px;
     }
     .skillCard{
         padding: 20px;
+    }
+}
+
+@media (min-width: 1350px){
+    .skillSection{
+        max-width: 1440px;
+        margin: auto;
     }
 }

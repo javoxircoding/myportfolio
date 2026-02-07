@@ -2,12 +2,12 @@ import styles from './Skills.module.css'
 
 const Skills = () => {
     return(
-        <section id='skill'>
+        <section id='skill' className={styles.skillSection}>
 
         {/* skill qismining headeri */}
 
             <div className={styles.title}>
-                <span>Skill</span>
+                <span>Ko'nikmalar</span>
                 <h2>Men nimalarni bilaman</h2>
                 <div className={styles.undLine}></div>
             </div>

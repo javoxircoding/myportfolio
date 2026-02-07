@@ -35,18 +35,18 @@ const About = () => {
                   className={styles.cardIcon}
                 />
                 <div>
-                  <h4>3+ Yil</h4>
+                  <h4>1+ Yil</h4>
                   <p>Tajriba</p>
                 </div>
               </div>
             </div>
             <div className={styles.statsGrid}>
               <div className={styles.statCard}>
-                <h3>50+</h3>
+                <h3>10+</h3>
                 <p>Tugallangan Loyihalar</p>
               </div>
               <div className={styles.statCard}>
-                <h3>30+</h3>
+                <h3>8+</h3>
                 <p>Mamnun Mijozlar</p>
               </div>
             </div>
@@ -78,7 +78,7 @@ const About = () => {
               {activeTab === "bio" && (
                 <div className={styles.bioContent}>
                   <p className={styles.description}>
-                    Men Hamidjanov Javohirman, O‘zbekistonda yashovchi frontend
+                    Men Hamidjanov Javoxirman, O‘zbekistonda yashovchi frontend
                     developerman. IT sohasiga qiziqishim 10-sinf davrida
                     birinchi ustozim orqali paydo bo‘lgan. Dastlab tibbiyot
                     yo‘nalishini tanlashni rejalashtirgan edim, ammo vaqt o‘tib
