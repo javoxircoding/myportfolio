@@ -4,24 +4,24 @@ const Experience = () => {
     const experiences = [
   {
     id: 1,
-    title: "Frontend Developer (Junior)",
-    date: "2024 - Hozirgi vaqt",
-    desc: "React.js, Next.js va zamonaviy UI kutubxonalar (Tailwind, Framer Motion) yordamida interaktiv loyihalar yaratish.",
-    img: "https://picsum.photos/400/300?random=1" // Namuna uchun rasm
+    title: "Frontend Dasturlash (Junior)",
+    date: "2026 - Hozirgi vaqt",
+    desc: "Hozirda Junior darajasidaman. React, Next.js va TypeScript’da real loyihalar yarataman. Asosiy e’tiborim — sifatli kod va murakkab muammolarga yechim topish.",
+    img: "public/jun.png" 
   },
   {
     id: 2,
-    title: "Web Designer & UI/UX",
+    title: "Frontend Web dasturlash",
     date: "2023 - 2024",
-    desc: "Figma orqali zamonaviy va foydalanuvchiga qulay interfeys dizaynlarini chizish hamda ularni kodga o'tkazish.",
-    img: "https://picsum.photos/400/300?random=2"
+    desc: "Oddiy qiziqish vaqt o'tib jiddiy maqsadga aylandi. Bu ikki yil ichida nazariyadan amaliyotga o'tdim, murakkab texnologiyalarni o'rgandim va real loyihalar ustida ishladim. Har bir kod qatori bilimlarimni shakllantirdi.",
+    img: "public/2024.png"
   },
   {
     id: 3,
-    title: "Freelance Project Manager",
+    title: "Meni dasturlashga kirishim",
     date: "2023",
-    desc: "Kichik va o'rta bizneslar uchun veb-saytlarni noldan rejalashtirish va jamoa bilan birga muvaffaqiyatli topshirish.",
-    img: "https://picsum.photos/400/300?random=3"
+    desc: "2023-yilda kompyuter nimaligini bilib, uning imkoniyatlariga qiziqqanman. Aynan o'sha yili dasturlash olami meni o'ziga tortgan va o'rganishga ilk qadamlarimni tashlaganman.",
+    img: "public/2023.webp"
   }
 ];
 
@@ -29,7 +29,7 @@ const Experience = () => {
 
     <section id="tajriba">
       <div className={styles.header}>
-        <span className={styles.badge}>Experiance</span>
+        <span className={styles.badge}>Tajriba</span>
         <h2 className={styles.title}>Men bosib o'tgan yol</h2>
         <div className={styles.titleUnderline}></div>
       </div>

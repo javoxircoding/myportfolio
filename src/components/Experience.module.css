@@ -153,6 +153,13 @@
     .infoBox{
         display: grid;
         align-items: center;
+        height: auto;
+    }
+    .infoBox h2{
+        font-size: 16px;
+    }
+    .infoBox p{
+        font-size: 14px;
     }
 }
 @media (max-width: 400px){

@@ -53,6 +53,7 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     border: 1px solid var(--border-hover);
     transition: transform 0.3s ease;
+    color: var(--text-color-1);
 }
 
 .card:hover {
@@ -98,5 +99,14 @@
 @media (max-width: 500px){
     .card{
         width: 250px;
+    }
+}@media (min-width: 1340px){
+    .roadmapWrapper{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        max-width: 1440px;
+        margin: auto;
+    }
+    .card{
+        width: 290px;
     }
 }
