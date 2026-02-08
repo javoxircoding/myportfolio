@@ -350,3 +350,26 @@
         font-size: 14px;
     }
 }
+@media (min-width: 1350px){
+    .Contact{
+        max-width: 1440px;
+        margin: auto;
+        position: relative;
+        padding: auto;
+    }
+    .conteyner{
+        border: solid;
+        width: 90%;
+    }
+    .contTwo{
+        width: 500px;
+        padding: 50px 30px;
+    }
+    .inputField{
+        width: 7vw;
+    }
+    .contTwo textarea{
+        width: 16vw;
+        height: 17vh;
+    }
+}
