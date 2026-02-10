@@ -7,21 +7,21 @@ const Experience = () => {
     title: "Frontend Dasturlash (Junior)",
     date: "2026 - Hozirgi vaqt",
     desc: "Hozirda Junior darajasidaman. React, Next.js va TypeScript’da real loyihalar yarataman. Asosiy e’tiborim — sifatli kod va murakkab muammolarga yechim topish.",
-    img: "public/jun.png" 
+    img: "jun.png" 
   },
   {
     id: 2,
     title: "Frontend Web dasturlash",
     date: "2023 - 2024",
     desc: "Oddiy qiziqish vaqt o'tib jiddiy maqsadga aylandi. Bu ikki yil ichida nazariyadan amaliyotga o'tdim, murakkab texnologiyalarni o'rgandim va real loyihalar ustida ishladim. Har bir kod qatori bilimlarimni shakllantirdi.",
-    img: "public/2024.png"
+    img: "2024.png"
   },
   {
     id: 3,
     title: "Meni dasturlashga kirishim",
     date: "2023",
     desc: "2023-yilda kompyuter nimaligini bilib, uning imkoniyatlariga qiziqqanman. Aynan o'sha yili dasturlash olami meni o'ziga tortgan va o'rganishga ilk qadamlarimni tashlaganman.",
-    img: "public/2023.webp"
+    img: "2023.webp"
   }
 ];
 
