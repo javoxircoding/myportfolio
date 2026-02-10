@@ -247,7 +247,7 @@
 @media(min-width: 1340px){
     .sec{
       max-width: 1700px;
-      max-height: 8git 00px;
+      max-height: 800px;
       margin-left: auto;
       margin-right: auto;   
       margin-top: auto;
@@ -257,7 +257,6 @@
       grid-template-rows: 1fr;
       align-items: center;
       justify-content: center;
-      background: red;
     }
     .sec .container{
       height: auto;
