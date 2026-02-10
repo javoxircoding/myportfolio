@@ -257,7 +257,7 @@
       grid-template-rows: 1fr;
       align-items: center;
       justify-content: center;
-      background: darkcyan;
+      background: red;
     }
     .sec .container{
       height: auto;
